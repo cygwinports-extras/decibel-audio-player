@@ -1,0 +1,159 @@
+decibel-audio-player
+------------------------------------------
+Decibel Audio Player is a GTK+ open-source (GPL license) audio player 
+designed for GNU/Linux, which aims at being very straightforward to use 
+by means of a very clean and user friendly interface.
+
+It aims also at being a real audio player and, as such, it does not 
+include features that are not meant to be part of an audio player. These 
+features (e.g., tagging) generally have a really better support in 
+specialized software.
+
+Runtime requirements:
+  python-2.5.1-3
+  python-dbus-0.81.1-1
+  python-gnomekeyring-2.18.0-1
+  python-gobject2-2.12.3-2
+  python-gstreamer010-0.10.7.1-1
+  python-gtk2-2.10.5-1
+  python-mutagen-1.11-1
+  python-notify-0.1.1-1
+
+Build requirements:
+  cygwin-1.5.24-2
+  cygport-0.3.5-1
+  python-2.5.1-3
+
+Canonical website:
+  http://decibel.silent-blade.org/
+
+Canonical download:
+  http://decibel.silent-blade.org/uploads/Main/
+
+-------------------------------------------
+
+Build instructions:
+  unpack decibel-audio-player-0.04-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./decibel-audio-player-0.04-X.cygport all
+
+This will create:
+  /usr/src/decibel-audio-player-0.04-X-src.tar.bz2
+  /usr/src/decibel-audio-player-0.04-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/postinstall/decibel-audio-player.sh
+  /usr/bin/decibel-audio-player
+  /usr/share/applications/decibel-audio-player.desktop
+  /usr/share/decibel-audio-player/pix/decibel-audio-player-128.png
+  /usr/share/decibel-audio-player/pix/decibel-audio-player-16.png
+  /usr/share/decibel-audio-player/pix/decibel-audio-player-64.png
+  /usr/share/decibel-audio-player/pix/decibel-audio-player.png
+  /usr/share/decibel-audio-player/res/Authentication.glade
+  /usr/share/decibel-audio-player/res/DesktopNotification.glade
+  /usr/share/decibel-audio-player/res/FileExplorer.glade
+  /usr/share/decibel-audio-player/res/FileExplorerMenu.glade
+  /usr/share/decibel-audio-player/res/IMStatus.glade
+  /usr/share/decibel-audio-player/res/MainWindow.glade
+  /usr/share/decibel-audio-player/res/Preferences.glade
+  /usr/share/decibel-audio-player/res/TracklistMenu.glade
+  /usr/share/decibel-audio-player/src/decibel-audio-player.py
+  /usr/share/decibel-audio-player/src/decibel-audio-player.pyc
+  /usr/share/decibel-audio-player/src/decibel-audio-player.pyo
+  /usr/share/decibel-audio-player/src/gui/__init__.py
+  /usr/share/decibel-audio-player/src/gui/__init__.pyc
+  /usr/share/decibel-audio-player/src/gui/__init__.pyo
+  /usr/share/decibel-audio-player/src/gui/about.py
+  /usr/share/decibel-audio-player/src/gui/about.pyc
+  /usr/share/decibel-audio-player/src/gui/about.pyo
+  /usr/share/decibel-audio-player/src/gui/authentication.py
+  /usr/share/decibel-audio-player/src/gui/authentication.pyc
+  /usr/share/decibel-audio-player/src/gui/authentication.pyo
+  /usr/share/decibel-audio-player/src/gui/fileChooser.py
+  /usr/share/decibel-audio-player/src/gui/fileChooser.pyc
+  /usr/share/decibel-audio-player/src/gui/fileChooser.pyo
+  /usr/share/decibel-audio-player/src/gui/modWindow.py
+  /usr/share/decibel-audio-player/src/gui/modWindow.pyc
+  /usr/share/decibel-audio-player/src/gui/modWindow.pyo
+  /usr/share/decibel-audio-player/src/gui/preferences.py
+  /usr/share/decibel-audio-player/src/gui/preferences.pyc
+  /usr/share/decibel-audio-player/src/gui/preferences.pyo
+  /usr/share/decibel-audio-player/src/gui/window.py
+  /usr/share/decibel-audio-player/src/gui/window.pyc
+  /usr/share/decibel-audio-player/src/gui/window.pyo
+  /usr/share/decibel-audio-player/src/media/__init__.py
+  /usr/share/decibel-audio-player/src/media/__init__.pyc
+  /usr/share/decibel-audio-player/src/media/__init__.pyo
+  /usr/share/decibel-audio-player/src/media/mp3.py
+  /usr/share/decibel-audio-player/src/media/mp3.pyc
+  /usr/share/decibel-audio-player/src/media/mp3.pyo
+  /usr/share/decibel-audio-player/src/media/ogg.py
+  /usr/share/decibel-audio-player/src/media/ogg.pyc
+  /usr/share/decibel-audio-player/src/media/ogg.pyo
+  /usr/share/decibel-audio-player/src/media/playlist.py
+  /usr/share/decibel-audio-player/src/media/playlist.pyc
+  /usr/share/decibel-audio-player/src/media/playlist.pyo
+  /usr/share/decibel-audio-player/src/media/track.py
+  /usr/share/decibel-audio-player/src/media/track.pyc
+  /usr/share/decibel-audio-player/src/media/track.pyo
+  /usr/share/decibel-audio-player/src/modules/AudioScrobbler.py
+  /usr/share/decibel-audio-player/src/modules/AudioScrobbler.pyc
+  /usr/share/decibel-audio-player/src/modules/AudioScrobbler.pyo
+  /usr/share/decibel-audio-player/src/modules/CtrlPanel.py
+  /usr/share/decibel-audio-player/src/modules/CtrlPanel.pyc
+  /usr/share/decibel-audio-player/src/modules/CtrlPanel.pyo
+  /usr/share/decibel-audio-player/src/modules/DesktopNotification.py
+  /usr/share/decibel-audio-player/src/modules/DesktopNotification.pyc
+  /usr/share/decibel-audio-player/src/modules/DesktopNotification.pyo
+  /usr/share/decibel-audio-player/src/modules/Explorer.py
+  /usr/share/decibel-audio-player/src/modules/Explorer.pyc
+  /usr/share/decibel-audio-player/src/modules/Explorer.pyo
+  /usr/share/decibel-audio-player/src/modules/FileExplorer.py
+  /usr/share/decibel-audio-player/src/modules/FileExplorer.pyc
+  /usr/share/decibel-audio-player/src/modules/FileExplorer.pyo
+  /usr/share/decibel-audio-player/src/modules/GSTPlayer.py
+  /usr/share/decibel-audio-player/src/modules/GSTPlayer.pyc
+  /usr/share/decibel-audio-player/src/modules/GSTPlayer.pyo
+  /usr/share/decibel-audio-player/src/modules/IMStatus.py
+  /usr/share/decibel-audio-player/src/modules/IMStatus.pyc
+  /usr/share/decibel-audio-player/src/modules/IMStatus.pyo
+  /usr/share/decibel-audio-player/src/modules/RestoreTracklist.py
+  /usr/share/decibel-audio-player/src/modules/RestoreTracklist.pyc
+  /usr/share/decibel-audio-player/src/modules/RestoreTracklist.pyo
+  /usr/share/decibel-audio-player/src/modules/StatusbarTitlebar.py
+  /usr/share/decibel-audio-player/src/modules/StatusbarTitlebar.pyc
+  /usr/share/decibel-audio-player/src/modules/StatusbarTitlebar.pyo
+  /usr/share/decibel-audio-player/src/modules/Tracklist.py
+  /usr/share/decibel-audio-player/src/modules/Tracklist.pyc
+  /usr/share/decibel-audio-player/src/modules/Tracklist.pyo
+  /usr/share/decibel-audio-player/src/modules/__init__.py
+  /usr/share/decibel-audio-player/src/modules/__init__.pyc
+  /usr/share/decibel-audio-player/src/modules/__init__.pyo
+  /usr/share/decibel-audio-player/src/tools/__init__.py
+  /usr/share/decibel-audio-player/src/tools/__init__.pyc
+  /usr/share/decibel-audio-player/src/tools/__init__.pyo
+  /usr/share/decibel-audio-player/src/tools/consts.py
+  /usr/share/decibel-audio-player/src/tools/consts.pyc
+  /usr/share/decibel-audio-player/src/tools/consts.pyo
+  /usr/share/decibel-audio-player/src/tools/prefs.py
+  /usr/share/decibel-audio-player/src/tools/prefs.pyc
+  /usr/share/decibel-audio-player/src/tools/prefs.pyo
+  /usr/share/doc/Cygwin/decibel-audio-player-0.04.README
+  /usr/share/man/man1/decibel-audio-player.1.gz
+  /usr/share/pixmaps/decibel-audio-player.png
+
+------------------
+
+Port Notes:
+
+----- version 0.04-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
