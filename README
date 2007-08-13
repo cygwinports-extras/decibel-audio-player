@@ -33,15 +33,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack decibel-audio-player-0.04-X-src.tar.bz2
+  unpack decibel-audio-player-0.05-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./decibel-audio-player-0.04-X.cygport all
+  cygport ./decibel-audio-player-0.05-X.cygport all
 
 This will create:
-  /usr/src/decibel-audio-player-0.04-X-src.tar.bz2
-  /usr/src/decibel-audio-player-0.04-X.tar.bz2
+  /usr/src/decibel-audio-player-0.05-X-src.tar.bz2
+  /usr/src/decibel-audio-player-0.05-X.tar.bz2
 
 -------------------------------------------
 
@@ -125,6 +125,9 @@ Files included in the binary package:
   /usr/share/decibel-audio-player/src/modules/RestoreTracklist.py
   /usr/share/decibel-audio-player/src/modules/RestoreTracklist.pyc
   /usr/share/decibel-audio-player/src/modules/RestoreTracklist.pyo
+  /usr/share/decibel-audio-player/src/modules/StatusIcon.py
+  /usr/share/decibel-audio-player/src/modules/StatusIcon.pyc
+  /usr/share/decibel-audio-player/src/modules/StatusIcon.pyo
   /usr/share/decibel-audio-player/src/modules/StatusbarTitlebar.py
   /usr/share/decibel-audio-player/src/modules/StatusbarTitlebar.pyc
   /usr/share/decibel-audio-player/src/modules/StatusbarTitlebar.pyo
@@ -143,13 +146,16 @@ Files included in the binary package:
   /usr/share/decibel-audio-player/src/tools/prefs.py
   /usr/share/decibel-audio-player/src/tools/prefs.pyc
   /usr/share/decibel-audio-player/src/tools/prefs.pyo
-  /usr/share/doc/Cygwin/decibel-audio-player-0.04.README
+  /usr/share/doc/Cygwin/decibel-audio-player-0.05.README
   /usr/share/man/man1/decibel-audio-player.1.gz
   /usr/share/pixmaps/decibel-audio-player.png
 
 ------------------
 
 Port Notes:
+
+----- version 0.05-1 -----
+Version bump.
 
 ----- version 0.04-1 -----
 Initial release for Cygwin.

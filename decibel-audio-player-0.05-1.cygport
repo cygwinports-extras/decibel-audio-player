@@ -1,0 +1,15 @@
+inherit python
+
+DESCRIPTION="GTK+ audio player"
+HOMEPAGE="http://decibel.silent-blade.org/"
+SRC_URI="http://decibel.silent-blade.org/uploads/Main/${P}.tar.gz"
+
+src_compile() { lndirs; }
+
+src_install() {
+	cd ${B}
+	dodir /usr/share/pixmaps
+	cyginstall prefix=/usr
+
+	python_optimize /usr/share/${PN}
+}
