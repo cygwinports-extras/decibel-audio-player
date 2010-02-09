@@ -1,5 +1,5 @@
 category: Audio Gnome
-requires: python python-dbus python-gnomekeyring python-gobject2 python-gstreamer010 python-gtk2 python-mutagen python-notify
+requires: python python-dbus python-gnome2 python-gnomekeyring python-gobject2.0 python-gst0.10 python-gtk2.0 python-mutagen python-pynotify
 sdesc: "GTK+ audio player"
 ldesc: "Decibel Audio Player is a GTK+ open-source (GPL license) audio 
 player designed for GNU/Linux, which aims at being very straightforward 
