@@ -12,4 +12,6 @@ src_install() {
 	cyginstall prefix=/usr
 
 	python_optimize /usr/share/${PN}
+
+	dodoc doc/ChangeLog doc/LICENCE
 }
