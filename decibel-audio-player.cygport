@@ -1,0 +1,29 @@
+inherit python
+
+NAME="decibel-audio-player"
+VERSION=1.08
+RELEASE=2
+CATEGORY="Audio"
+SUMMARY="GTK+ audio player"
+DESCRIPTION="Decibel Audio Player is a GTK+ open-source (GPL license) audio
+player designed for GNU/Linux, which aims at being very straightforward to use
+by means of a very clean and user friendly interface. It aims also at being a
+real audio player and, as such, it does not include features that are not meant
+to be part of an audio player. These features (e.g., tagging) generally have a
+really better support in specialized software."
+HOMEPAGE="http://decibel.silent-blade.org/"
+SRC_URI="http://decibel.silent-blade.org/uploads/Main/${P}.tar.gz"
+
+REQUIRES="gstreamer0.10-plugins-base gstreamer0.10-plugins-good"
+
+src_compile() { lndirs; }
+
+src_install() {
+	cd ${B}
+	dodir /usr/share/pixmaps
+	cyginstall prefix=/usr
+
+	python_optimize /usr/share/${PN}
+
+	dodoc doc/ChangeLog doc/LICENCE
+}
